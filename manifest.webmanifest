@@ -1,0 +1,18 @@
+{
+  "name": "AUREON One — AI Media OS",
+  "short_name": "AUREON One",
+  "description": "Central mobile de produção e crescimento de canais",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090f1e",
+  "theme_color": "#090f1e",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
