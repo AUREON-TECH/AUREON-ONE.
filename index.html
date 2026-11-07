@@ -40,7 +40,7 @@ function render(){
     sel.value=x.status;
     sel.onchange=()=>{commit(data.map((item,j)=>j===i?{...item,status:sel.value}:item));render()};
     const del=document.createElement('button');del.textContent='Excluir';
-    del.onclick=()=>commit(data.filter((_,j)=>j!==i));
+    del.onclick=()=>{if(window.confirm('Excluir esta pauta? Esta ação não pode ser desfeita.')) commit(data.filter((_,j)=>j!==i));};
     d.append(title,p,sel,del);q.append(d);
   });
 }
